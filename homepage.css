@@ -26,20 +26,33 @@ body {
         margin-bottom: 10px;
         width: 100%;
     }
-    .search-container input {
+     .search-container input {
         width: 50%;
         padding: 10px;
-        border-radius: 25px;
+        border-radius: 15px;
         border: none;
         outline: none;
         font-size: 16px;
         text-align: center;
          opacity: 100%;   
     }
+
+    .clear-btn {
+      position: absolute;
+      margin-right: -180px;
+      margin-top: 17px;
+      transform: translateY(-50%);
+      font-size: 30px;
+      color: #888;
+      cursor: pointer;
+      display: none; /* Hidden by default */
+    }
+
     .table-wrapper {
         overflow-x: auto;
         width: 95%;
     }
+
     table {
         width: 100%;
         border-collapse: collapse;
