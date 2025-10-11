@@ -1432,47 +1432,33 @@
 <script>
 const searchInput = document.getElementById("searchInput");
 const clearBtn = document.getElementById("clearBtn");
+const table = document.getElementById("welfareTable");
+const rows = table.getElementsByTagName("tr");
 
-// Function to filter both tables
-function filterTables() {
-  const filter = searchInput.value.toLowerCase();
+// Show or hide the clear button when typing
+searchInput.addEventListener("input", function() {
+  clearBtn.style.display = this.value ? "block" : "none";
+  const filter = this.value.toLowerCase();
 
-  // Select both tables
-  const tables = [document.getElementById("table1"), document.getElementById("table2")];
-
-  tables.forEach(table => {
-    const rows = table.getElementsByTagName("tr");
-
-    for (let i = 2; i < rows.length; i++) { // skip headers
-      const cell = rows[i].getElementsByTagName("td")[0];
-      if (cell) {
-        const name = cell.textContent || cell.innerText;
-        rows[i].style.display = name.toLowerCase().includes(filter) ? "" : "none";
-      }
+  for (let i = 1; i < rows.length; i++) {
+    const cell = rows[i].getElementsByTagName("td")[0];
+    if (cell) {
+      const name = cell.textContent || cell.innerText;
+      rows[i].style.display = name.toLowerCase().includes(filter) ? "" : "none";
     }
-  });
+  }
+});
 
-  clearBtn.style.display = searchInput.value ? "block" : "none";
-}
-
-// Function to clear search
-function clearSearch() {
+// Clear search input when clear button clicked
+clearBtn.addEventListener("click", function() {
   searchInput.value = "";
   clearBtn.style.display = "none";
 
-  // Show all rows in both tables
-  const tables = [document.getElementById("table1"), document.getElementById("table2")];
-  tables.forEach(table => {
-    const rows = table.getElementsByTagName("tr");
-    for (let i = 2; i < rows.length; i++) {
-      rows[i].style.display = "";
-    }
-  });
-}
-
-// Event listeners
-searchInput.addEventListener("input", filterTables);
-clearBtn.addEventListener("click", clearSearch);
+  // Show all rows again
+  for (let i = 1; i < rows.length; i++) {
+    rows[i].style.display = "";
+  }
+});
 </script>
 
 
