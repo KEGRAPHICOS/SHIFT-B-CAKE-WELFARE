@@ -67,7 +67,7 @@ body {
     th, td {
         border: 1px solid #0b3b2e;
         padding: 10px;
-        text-align: left;
+        text-align: center;
         color: #0b3b2e;
         font-weight: bold;    
     }
