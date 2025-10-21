@@ -72,6 +72,10 @@ body {
         font-weight: bold;    
     }
 
+    th, td, i {
+        color: #d20103;
+    }
+
     th.title {
         font-size: 1.5rem;
         font-weight: bold;
