@@ -113,7 +113,6 @@ body {
         width: 45px;
         height: 45px;
         padding: 10px;
-        animation: blink 3s infinite;
     }
 
     .table-header {
@@ -157,7 +156,6 @@ body {
   margin-bottom: 10px;
   padding-left: 10px;      
   border-left: 3px solid #1abc9c;
-  animation: blink 3s infinite;
 }
 
 .footer p {
