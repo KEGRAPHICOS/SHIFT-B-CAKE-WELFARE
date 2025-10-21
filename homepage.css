@@ -156,7 +156,8 @@ body {
   font-size: 20px;
   margin-bottom: 10px;
   padding-left: 10px;      
-  border-left: 3px solid #1abc9c;      
+  border-left: 3px solid #1abc9c;
+  animation: blink 3s infinite;
 }
 
 .footer p {
