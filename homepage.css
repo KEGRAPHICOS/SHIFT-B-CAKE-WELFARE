@@ -88,19 +88,32 @@ body {
     .disqualified {
         color: red;
         font-weight: bold;
+        animation: blink 1s infinite;
     }
+
+        @keyframes blink {
+        0%, 50%, 100% {
+        opacity: 1;
+  }
+        25%, 75% {
+        opacity: 0;
+    }
+  }
             
     tbody tr:nth-child(even) {
         background-color: #a8c9a1;
     }
+
     tbody tr:nth-child(odd) {
         background-color: #d9e8d3;
     }
+
     .logo {
         width: 45px;
         height: 45px;
         padding: 10px;
     }
+
     .table-header {
         display: flex;
         justify-content: center;
