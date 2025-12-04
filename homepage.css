@@ -100,6 +100,22 @@ body {
         opacity: 0;
     }
   }
+
+      .resigned {
+        color: white;
+        font-weight: bold;
+        animation: blink 3s infinite;
+        text-decoration: none;
+    }
+
+        @keyframes blink {
+        0%, 50%, 100% {
+        opacity: 1;
+  }
+        25%, 75% {
+        opacity: 0;
+    }
+  }
             
     tbody tr:nth-child(even) {
         background-color: #a8c9a1;
