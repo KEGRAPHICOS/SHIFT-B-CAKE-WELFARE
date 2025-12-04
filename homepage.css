@@ -102,7 +102,7 @@ body {
   }
 
       .resigned {
-        color: white;
+        color: black;
         font-weight: bold;
         animation: blink 3s infinite;
         text-decoration: none;
