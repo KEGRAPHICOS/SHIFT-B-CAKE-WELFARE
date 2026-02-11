@@ -8,19 +8,32 @@
 </head>
 <body>
 
-    <!-- Hamburger Menu -->
-<div class="menu-container" id="menuContainer">
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
-    <div class="menu-dropdown">
-        <a href="index.html">Home</a>
-        <a href="policy.html">Policies</a>
-        <a href="benefits.html">Benefits</a>
-        <a href="rules-regulations.html">Rules</a>
-    </div>
-</div>
 
 
     <div class="table-header">
+
+        <!-- Left Slide Menu -->
+<div class="side-menu" id="sideMenu">
+  <div class="side-menu-header">
+    <span>☰ Menu</span>
+    <span class="close-btn" onclick="toggleMenu()">✕</span>
+  </div>
+
+  <a href="index.html">Home</a>
+  <a href="policy.html">Policies</a>
+  <a href="benefits.html">Welfare Benefits</a>
+  <a href="rules-regulations.html">Rules & Regulations</a>
+
+  <hr>
+
+  <a href="#">About Welfare</a>
+  <a href="#">Contact Committee</a>
+</div>
+
+<!-- Menu Button -->
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+        
         <img src="20250811_204647.png" alt="Logo" class="logo">
         <div class="header">MONTHLY WELFARE CONTRIBUTIONS (2025)</div>
         <img src="20250811_204647.png" alt="Logo" class="logo">
