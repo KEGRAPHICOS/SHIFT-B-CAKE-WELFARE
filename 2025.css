@@ -18,9 +18,17 @@ body {
   cursor: pointer;
   z-index: 1001;
   flex-shrink: 0;
-  margin-right: 30px;
+  margin-right: 35px;
+  transition: opacity 0.2s ease;
   
 }
+
+.hide-menu-btn {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 
 /* Side Menu */
 .side-menu {
@@ -35,6 +43,10 @@ body {
   transition: 0.3s ease;
   z-index: 1000;
   border-radius: 10px;
+}
+
+.side-menu.open {
+  left: 0;
 }
 
 .side-menu a {
@@ -95,12 +107,12 @@ body.menu-open {
         align-items: center;
         justify-content: center;
         margin-bottom: 10px;
-        margin-right: 75px;
+        margin-right: 80px;
         width: 100%;
         position: relative;
     }
      .search-container input {
-        width: 45%;
+        width: 60%;
         padding: 10px;
         border-radius: 5px;
         border: none;
