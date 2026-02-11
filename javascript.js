@@ -31,7 +31,10 @@ clearBtn.addEventListener("click", () => {
 });
 
 function toggleMenu() {
-  const menu = document.getElementById("sideMenu");
-  menu.classList.toggle("active");
-}
+    const sideMenu = document.getElementById("sideMenu");
+    const menuBtn = document.querySelector(".menu-btn");
+
+    sideMenu.classList.toggle("open");
+    menuBtn.classList.toggle("hide-menu-btn");
+  }
 
